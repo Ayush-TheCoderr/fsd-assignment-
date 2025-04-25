@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWrist Pro - Premium Smartwatch</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">TechWrist</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#products" class="active">Products</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="product-detail">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> &gt; 
+            <a href="index.html#products">Products</a> &gt; 
+            <span>TechWrist Pro</span>
+        </div>
+
+        <section class="product-showcase">
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="images/watch1-large.jpg" alt="TechWrist Pro" id="main-product-image">
+                </div>
+                <div class="thumbnail-container">
+                    <img src="images/watch1-large.jpg" alt="TechWrist Pro Main" class="thumbnail active" onclick="changeImage('images/watch1-large.jpg')">
+                    <img src="images/watch1-side.jpg" alt="TechWrist Pro Side View" class="thumbnail" onclick="changeImage('images/watch1-side.jpg')">
+                    <img src="images/watch1-wrist.jpg" alt="TechWrist Pro On Wrist" class="thumbnail" onclick="changeImage('images/watch1-wrist.jpg')">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>TechWrist Pro</h1>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>(128 reviews)</span>
+                </div>
+                <p class="product-price">$299.99</p>
+                <p class="availability"><i class="fas fa-check-circle"></i> In Stock</p>
+                <div class="product-description">
+                    <p>The TechWrist Pro is our flagship smartwatch, combining premium materials with cutting-edge technology. Crafted with a sapphire crystal display and titanium body, this smartwatch offers unparalleled durability and style.</p>
+                </div>
+                <div class="color-options">
+                    <p>Color:</p>
+                    <div class="colors">
+                        <span class="color-circle black active" data-color="Black"></span>
+                        <span class="color-circle silver" data-color="Silver"></span>
+                        <span class="color-circle gold" data-color="Gold"></span>
+                    </div>
+                    <p id="selected-color">Black</p>
+                </div>
+                <div class="product-actions">
+                    <button class="btn-primary">Add to Cart</button>
+                    <button class="btn-secondary"><i class="far fa-heart"></i> Add to Wishlist</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-details">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="features">Features</button>
+                <button class="tab-btn" data-tab="specs">Specifications</button>
+                <button class="tab-btn" data-tab="reviews">Reviews</button>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane active" id="features">
+                    <h2>Key Features</h2>
+                    <div class="features-grid">
+                        <div class="feature">
+                            <i class="fas fa-heartbeat"></i>
+                            <h3>Advanced Health Monitoring</h3>
+                            <p>Track heart rate, blood oxygen levels, sleep quality, and stress levels with medical-grade accuracy.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-running"></i>
+                            <h3>Fitness Tracking</h3>
+                            <p>Supports over 100 workout modes with automatic detection for common activities.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-battery-full"></i>
+                            <h3>Extended Battery Life</h3>
+                            <p>Up to 5 days of battery life on a single charge with regular use.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-tint"></i>
+                            <h3>Water Resistant</h3>
+                            <p>5 ATM water resistance rating, suitable for swimming and water activities.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <h3>Built-in GPS</h3>
+                            <p>Track your routes and activities without needing to bring your phone.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-comment-alt"></i>
+                            <h3>Smart Notifications</h3>
+                            <p>Receive and respond to messages, calls, and app notifications directly from your wrist.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="specs">
+                    <h2>Technical Specifications</h2>
+                    <div class="specs-table">
+                        <div class="spec-row">
+                            <div class="spec-name">Display</div>
+                            <div class="spec-value">1.4" AMOLED touchscreen (454 x 454 pixels)</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-name">Processor</div>
+                            <div class="spec-value">Dual-core 1.2GHz</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-name">Memory</div>
+                            <div class="spec-value">1GB RAM, 8GB storage</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-name">Battery</div>
+                            <div class="spec-value">420mAh Li-ion battery (Up to 5 days)</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-name">Connectivity</div>
+                            <div class="spec-value">Bluetooth 5.0, Wi-Fi, NFC, GPS</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-name">Sensors</div>
+                            <div class="spec-value">Heart rate, Accelerometer, Gyroscope, Barometer, SpO2, Temperature</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-name">Water Resistance</div>
+                            <div class="spec-value">5 ATM (50 meters)</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-name">Materials</div>
+                            <div class="spec-value">Titanium case, Sapphire crystal display, Silicone band</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-name">Dimensions</div>
+                            <div class="spec-value">45mm x 45mm x 11mm</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-name">Weight</div>
+                            <div class="spec-value">48g (without band)</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-name">Compatibility</div>
+                            <div class="spec-value">iOS 12.0+, Android 8.0+</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="reviews">
+                    <h2>Customer Reviews</h2>
+                    <div class="review-summary">
+                        <div class="average-rating">
+                            <span class="rating-number">4.5</span>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>Based on 128 reviews</p>
+                        </div>
+                        <div class="rating-breakdown">
+                            <div class="rating-bar">
+                                <span class="rating-level">5 <i class="fas fa-star"></i></span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 70%"></div>
+                                </div>
+                                <span class="percentage">70%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span class="rating-level">4 <i class="fas fa-star"></i></span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 20%"></div>
+                                </div>
+                                <span class="percentage">20%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span class="rating-level">3 <i class="fas fa-star"></i></span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 5%"></div>
+                                </div>
+                                <span class="percentage">5%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span class="rating-level">2 <i class="fas fa-star"></i></span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 3%"></div>
+                                </div>
+                                <span class="percentage">3%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span class="rating-level">1 <i class="fas fa-star"></i></span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 2%"></div>
+                                </div>
+                                <span class="percentage">2%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-reviews">
+                        <div class="review">
+                            <div class="review-header">
+                                <div class="review-user">
+                                    <img src="images/avatar1.jpg" alt="User" class="avatar">
+                                    <div class="user-info">
+                                        <h4>Michael S.</h4>
+                                        <div class="review-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-date">May 15, 2023</div>
+                            </div>
+                            <div class="review-content">
+                                <p>After trying multiple smartwatches, the TechWrist Pro is by far the best I've owned. The battery life is incredible, and the health tracking features are spot on. The titanium build feels premium and has survived several accidental knocks already.</p>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="review-header">
+                                <div class="review-user">
+                                    <img src="images/avatar2.jpg" alt="User" class="avatar">
+                                    <div class="user-info">
+                                        <h4>Sarah J.</h4>
+                                        <div class="review-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-date">April 2, 2023</div>
+                            </div>
+                            <div class="review-content">
+                                <p>I've been using the TechWrist Pro for about a month now. The health tracking is amazing and has helped me improve my sleep habits. My only complaint is that the notification system could be more customizable, but overall it's an excellent product.</p>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="review-header">
+                                <div class="review-user">
+                                    <img src="images/avatar3.jpg" alt="User" class="avatar">
+                                    <div class="user-info">
+                                        <h4>David R.</h4>
+                                        <div class="review-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-date">March 18, 2023</div>
+                            </div>
+                            <div class="review-content">
+                                <p>Great watch with impressive features. I particularly like the GPS accuracy which has been reliable during my trail runs. Battery life is good but not quite the 5 days advertised if you use GPS frequently. Build quality is excellent.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-products">
+            <h2>You May Also Like</h2>
+            <div class="product-container">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/watch2.jpg" alt="TechWrist Sport">
+                    </div>
+                    <div class="product-info">
+                        <h3>TechWrist Sport</h3>
+                        <p>Built for athletes and fitness enthusiasts</p>
+                        <p class="price">$249.99</p>
+                        <a href="product2.html" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/watch3.jpg" alt="TechWrist Mini">
+                    </div>
+                    <div class="product-info">
+                        <h3>TechWrist Mini</h3>
+                        <p>Compact design with essential features</p>
+                        <p class="price">$199.99</p>
+                        <a href="product3.html" class="btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>ABOUT</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">TechWrist Stories</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>HELP</h3>
+                <ul>
+                    <li><a href="#">Payments</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Cancellation & Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Report Infringement</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>POLICY</h3>
+                <ul>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>SOCIAL</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Mail Us:</h3>
+                <p>TechWrist India Private Limited,<br>
+                Buildings Alyssa, Begonia &<br>
+                Clove Embassy Tech Village,<br>
+                Outer Ring Road, Devarabeesanahalli Village,<br>
+                Bengaluru, 560103,<br>
+                Karnataka, India</p>
+            </div>
+            <div class="footer-section">
+                <h3>Registered Office Address:</h3>
+                <p>TechWrist India Private Limited,<br>
+                Buildings Alyssa, Begonia &<br>
+                Clove Embassy Tech Village,<br>
+                Outer Ring Road, Devarabeesanahalli Village,<br>
+                Bengaluru, 560103,<br>
+                Karnataka, India<br>
+                CIN: U51109KA2012PTC066107<br>
+                Telephone: 1800 202 9898</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 TechWrist India. All Rights Reserved.</p>
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-paypal"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Product Image Gallery
+        function changeImage(imageSrc) {
+            document.getElementById('main-product-image').src = imageSrc;
+            
+            // Update active thumbnail
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            thumbnails.forEach(thumb => {
+                if (thumb.src.includes(imageSrc)) {
+                    thumb.classList.add('active');
+                } else {
+                    thumb.classList.remove('active');
+                }
+            });
+        }
+
+        // Color Selection
+        const colorCircles = document.querySelectorAll('.color-circle');
+        const selectedColor = document.getElementById('selected-color');
+        
+        colorCircles.forEach(circle => {
+            circle.addEventListener('click', () => {
+                // Remove active class from all circles
+                colorCircles.forEach(c => c.classList.remove('active'));
+                
+                // Add active class to clicked circle
+                circle.classList.add('active');
+                
+                // Update selected color text
+                selectedColor.textContent = circle.getAttribute('data-color');
+            });
+        });
+
+        // Tab Switching
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabPanes = document.querySelectorAll('.tab-pane');
+        
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons and panes
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabPanes.forEach(pane => pane.classList.remove('active'));
+                
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                // Show the corresponding tab pane
+                const tabId = button.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html> 

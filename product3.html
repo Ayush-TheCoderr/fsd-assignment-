@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWrist Mini - Compact Smartwatch</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">TechWrist</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#products" class="active">Products</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="product-detail">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> &gt; 
+            <a href="index.html#products">Products</a> &gt; 
+            <span>TechWrist Mini</span>
+        </div>
+
+        <section class="product-showcase">
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="images/watch3-large.jpg" alt="TechWrist Mini" id="main-product-image">
+                </div>
+                <div class="thumbnail-container">
+                    <img src="images/watch3-large.jpg" alt="TechWrist Mini Main" class="thumbnail active" onclick="changeImage('images/watch3-large.jpg')">
+                    <img src="images/watch3-side.jpg" alt="TechWrist Mini Side View" class="thumbnail" onclick="changeImage('images/watch3-side.jpg')">
+                    <img src="images/watch3-wrist.jpg" alt="TechWrist Mini On Wrist" class="thumbnail" onclick="changeImage('images/watch3-wrist.jpg')">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>TechWrist Mini</h1>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>(86 reviews)</span>
+                </div>
+                <p class="product-price">$199.99</p>
+                <p class="availability"><i class="fas fa-check-circle"></i> In Stock</p>
+                <div class="product-description">
+                    <p>The TechWrist Mini combines sleek, compact design with essential smartwatch functionality. Perfect for those who want a minimalist smartwatch that doesn't compromise on features or style. Ideal for everyday wear and smaller wrists.</p>
+                </div>
+                <div class="color-options">
+                    <p>Color:</p>
+                    <div class="colors">
+                        <span class="color-circle black active" data-color="Black"></span>
+                        <span class="color-circle pink" data-color="Pink" style="background-color: #e84393;"></span>
+                        <span class="color-circle mint" data-color="Mint" style="background-color: #00b894;"></span>
+                    </div>
+                    <p id="selected-color">Black</p>
+                </div>
+                <div class="product-actions">
+                    <button class="btn-primary">Add to Cart</button>
+                    <button class="btn-secondary"><i class="far fa-heart"></i> Add to Wishlist</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-details">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="features">Features</button>
+                <button class="tab-btn" data-tab="specs">Specifications</button>
+                <button class="tab-btn" data-tab="reviews">Reviews</button>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane active" id="features">
+                    <h2>Key Features</h2>
+                    <div class="features-grid">
+                        <div class="feature">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h3>Compact Design</h3>
+                            <p>38mm case size ideal for smaller wrists and minimalist preferences.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heartbeat"></i>
+                            <h3>Health Monitoring</h3>
+                            <p>Essential health tracking including heart rate, steps, and sleep analysis.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-battery-full"></i>
+                            <h3>Long Battery Life</h3>
+                            <p>Up to 7 days of battery life on a single charge with typical use.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-tint"></i>
+                            <h3>Water Resistant</h3>
+                            <p>3 ATM water resistance for everyday wear, including splashes and brief immersion.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-bell"></i>
+                            <h3>Smart Notifications</h3>
+                            <p>Stay connected with call, text, and app notifications on your wrist.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-feather-alt"></i>
+                            <h3>Lightweight</h3>
+                            <p>Our lightest smartwatch at just 32g for all-day comfort.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="specs">
+                    <h2>Technical Specifications</h2>
+                    <div class="specs-table">
+                        <div class="spec-row">
+                            <div class="spec-name">Display</div>
+                            <div class="spec-value">1.1" AMOLED touchscreen (360 x 360 pixels)</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-name">Processor</div>
+                            <div class="spec-value">Single-core 1.0GHz</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-name">Memory</div>
+                            <div class="spec-value">512MB RAM, 4GB storage</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-name">Battery</div>
+                            <div class="spec-value">300mAh Li-ion battery (Up to 7 days)</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-name">Connectivity</div>
+                            <div class="spec-value">Bluetooth 5.0, Wi-Fi</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-name">Sensors</div>
+                            <div class="spec-value">Heart rate, Accelerometer, Gyroscope</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-name">Water Resistance</div>
+                            <div class="spec-value">3 ATM (30 meters)</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-name">Materials</div>
+                            <div class="spec-value">Aluminum case, Glass display, Silicone band</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-name">Dimensions</div>
+                            <div class="spec-value">38mm x 38mm x 9.5mm</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-name">Weight</div>
+                            <div class="spec-value">32g (without band)</div>
+                        </div>
+                        <div class="spec-row">
+                            <div class="spec-name">Compatibility</div>
+                            <div class="spec-value">iOS 12.0+, Android 8.0+</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="reviews">
+                    <h2>Customer Reviews</h2>
+                    <div class="review-summary">
+                        <div class="average-rating">
+                            <span class="rating-number">4.3</span>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>Based on 86 reviews</p>
+                        </div>
+                        <div class="rating-breakdown">
+                            <div class="rating-bar">
+                                <span class="rating-level">5 <i class="fas fa-star"></i></span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 55%"></div>
+                                </div>
+                                <span class="percentage">55%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span class="rating-level">4 <i class="fas fa-star"></i></span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 30%"></div>
+                                </div>
+                                <span class="percentage">30%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span class="rating-level">3 <i class="fas fa-star"></i></span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 10%"></div>
+                                </div>
+                                <span class="percentage">10%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span class="rating-level">2 <i class="fas fa-star"></i></span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 3%"></div>
+                                </div>
+                                <span class="percentage">3%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span class="rating-level">1 <i class="fas fa-star"></i></span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 2%"></div>
+                                </div>
+                                <span class="percentage">2%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-reviews">
+                        <div class="review">
+                            <div class="review-header">
+                                <div class="review-user">
+                                    <img src="images/avatar7.jpg" alt="User" class="avatar">
+                                    <div class="user-info">
+                                        <h4>Emily W.</h4>
+                                        <div class="review-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-date">May 30, 2023</div>
+                            </div>
+                            <div class="review-content">
+                                <p>I've been looking for a smaller smartwatch for years. Most watches look gigantic on my wrist, but the TechWrist Mini is perfect. It has all the features I need for daily use, and the battery lasts for days. The pink version looks absolutely beautiful too!</p>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="review-header">
+                                <div class="review-user">
+                                    <img src="images/avatar8.jpg" alt="User" class="avatar">
+                                    <div class="user-info">
+                                        <h4>Thomas H.</h4>
+                                        <div class="review-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-date">April 15, 2023</div>
+                            </div>
+                            <div class="review-content">
+                                <p>Great little watch for the price. It doesn't have all the bells and whistles of the Pro model, but it covers all the basics perfectly. The design is clean and minimalist, which I prefer over bulkier watches. Battery life has been excellent so far.</p>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="review-header">
+                                <div class="review-user">
+                                    <img src="images/avatar9.jpg" alt="User" class="avatar">
+                                    <div class="user-info">
+                                        <h4>Olivia C.</h4>
+                                        <div class="review-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-date">March 3, 2023</div>
+                            </div>
+                            <div class="review-content">
+                                <p>The watch looks great and is very comfortable to wear, but I've had some issues with the heart rate monitoring accuracy. It sometimes fails to record during workouts, which is frustrating. The notification system works well though, and the battery life is impressive for such a small device.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-products">
+            <h2>You May Also Like</h2>
+            <div class="product-container">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/watch1.jpg" alt="TechWrist Pro">
+                    </div>
+                    <div class="product-info">
+                        <h3>TechWrist Pro</h3>
+                        <p>Our flagship model with premium features</p>
+                        <p class="price">$299.99</p>
+                        <a href="product1.html" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/watch2.jpg" alt="TechWrist Sport">
+                    </div>
+                    <div class="product-info">
+                        <h3>TechWrist Sport</h3>
+                        <p>Built for athletes and fitness enthusiasts</p>
+                        <p class="price">$249.99</p>
+                        <a href="product2.html" class="btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>ABOUT</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">TechWrist Stories</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>HELP</h3>
+                <ul>
+                    <li><a href="#">Payments</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Cancellation & Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Report Infringement</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>POLICY</h3>
+                <ul>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>SOCIAL</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Mail Us:</h3>
+                <p>TechWrist India Private Limited,<br>
+                Buildings Alyssa, Begonia &<br>
+                Clove Embassy Tech Village,<br>
+                Outer Ring Road, Devarabeesanahalli Village,<br>
+                Bengaluru, 560103,<br>
+                Karnataka, India</p>
+            </div>
+            <div class="footer-section">
+                <h3>Registered Office Address:</h3>
+                <p>TechWrist India Private Limited,<br>
+                Buildings Alyssa, Begonia &<br>
+                Clove Embassy Tech Village,<br>
+                Outer Ring Road, Devarabeesanahalli Village,<br>
+                Bengaluru, 560103,<br>
+                Karnataka, India<br>
+                CIN: U51109KA2012PTC066107<br>
+                Telephone: 1800 202 9898</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 TechWrist India. All Rights Reserved.</p>
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-paypal"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Product Image Gallery
+        function changeImage(imageSrc) {
+            document.getElementById('main-product-image').src = imageSrc;
+            
+            // Update active thumbnail
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            thumbnails.forEach(thumb => {
+                if (thumb.src.includes(imageSrc)) {
+                    thumb.classList.add('active');
+                } else {
+                    thumb.classList.remove('active');
+                }
+            });
+        }
+
+        // Color Selection
+        const colorCircles = document.querySelectorAll('.color-circle');
+        const selectedColor = document.getElementById('selected-color');
+        
+        colorCircles.forEach(circle => {
+            circle.addEventListener('click', () => {
+                // Remove active class from all circles
+                colorCircles.forEach(c => c.classList.remove('active'));
+                
+                // Add active class to clicked circle
+                circle.classList.add('active');
+                
+                // Update selected color text
+                selectedColor.textContent = circle.getAttribute('data-color');
+            });
+        });
+
+        // Tab Switching
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabPanes = document.querySelectorAll('.tab-pane');
+        
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons and panes
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabPanes.forEach(pane => pane.classList.remove('active'));
+                
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                // Show the corresponding tab pane
+                const tabId = button.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html> 

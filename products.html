@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Catalog - TechWrist India</title>
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="index.html">TechWrist India</a>
+            </div>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" placeholder="Search for products, brands and more">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            
+            <div class="nav-actions">
+                <a href="#" class="nav-btn"><i class="fas fa-user"></i> Login</a>
+                <a href="#" class="nav-btn"><i class="fas fa-shopping-cart"></i> Cart</a>
+                <a href="#" class="nav-btn"><i class="fas fa-heart"></i> Wishlist</a>
+            </div>
+        </nav>
+        
+        <div class="categories-nav">
+            <div class="category-item">
+                <a href="#">Electronics</a>
+            </div>
+            <div class="category-item">
+                <a href="#">Smartwatches</a>
+            </div>
+            <div class="category-item">
+                <a href="#">Sports</a>
+            </div>
+            <div class="category-item">
+                <a href="#">Accessories</a>
+            </div>
+            <div class="category-item">
+                <a href="#">New Arrivals</a>
+            </div>
+            <div class="category-item">
+                <a href="#">Offers</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>All Products</span>
+        </div>
+    </div>
+
+    <div class="products-container">
+        <aside class="filters-sidebar">
+            <div class="filter-group">
+                <h3>FILTERS</h3>
+            </div>
+            
+            <div class="filter-group">
+                <h3>Category</h3>
+                <div class="filter-options">
+                    <label class="filter-option">
+                        <input type="checkbox" value="all" data-type="category">
+                        All Categories
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" value="electronics" data-type="category">
+                        Electronics
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" value="clothing" data-type="category">
+                        Clothing
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" value="home" data-type="category">
+                        Home & Kitchen
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" value="books" data-type="category">
+                        Books
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <h3>Price Range</h3>
+                <div class="filter-options">
+                    <label class="filter-option">
+                        <input type="checkbox" value="7999-14999" data-type="price">
+                        ₹7,999 - ₹14,999
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" value="15000-24999" data-type="price">
+                        ₹15,000 - ₹24,999
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" value="25000+" data-type="price">
+                        ₹25,000+
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <h3>Customer Ratings</h3>
+                <div class="filter-options">
+                    <label class="filter-option">
+                        <input type="checkbox" value="4+" data-type="rating">
+                        4★ & above
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" value="3+" data-type="rating">
+                        3★ & above
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" value="2+" data-type="rating">
+                        2★ & above
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <h3>Features</h3>
+                <div class="filter-options">
+                    <label class="filter-option">
+                        <input type="checkbox" value="new" data-type="features">
+                        New Arrival
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" value="eco-friendly" data-type="features">
+                        Eco-Friendly
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" value="bestseller" data-type="features">
+                        Bestseller
+                    </label>
+                </div>
+            </div>
+
+            <button id="reset-filters" class="btn btn-secondary">Clear All</button>
+        </aside>
+
+        <main class="products-main">
+            <div class="products-header">
+                <div class="products-count">
+                    <span id="product-count">12</span> Items
+                </div>
+                <div class="products-sort">
+                    <label for="sort-select">Sort By:</label>
+                    <select id="sort-select">
+                        <option value="featured">Popularity</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest First</option>
+                        <option value="rating">Rating</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="product-list">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="electronics" data-price="14999" data-date="2023-10-15" data-rating="4.5" data-features="new,bestseller">
+                    <div class="product-badge new">New</div>
+                    <img src="https://via.placeholder.com/300x300" alt="Wireless Headphones">
+                    <div class="product-info">
+                        <h3>Wireless Headphones</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★<span class="half-star">★</span></span>
+                            <span class="count">(42)</span>
+                        </div>
+                        <p class="product-price">₹14,999</p>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="btn btn-icon"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="electronics" data-price="29999" data-date="2023-09-20" data-rating="4.8" data-features="bestseller">
+                    <div class="product-badge bestseller">Bestseller</div>
+                    <img src="https://via.placeholder.com/300x300" alt="Smart Watch">
+                    <div class="product-info">
+                        <h3>Smart Watch Pro</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="count">(128)</span>
+                        </div>
+                        <p class="product-price">₹29,999</p>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="btn btn-icon"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="home" data-price="11999" data-date="2023-11-05" data-rating="4.3" data-features="eco-friendly">
+                    <div class="product-badge eco">Eco</div>
+                    <img src="https://via.placeholder.com/300x300" alt="Coffee Maker">
+                    <div class="product-info">
+                        <h3>Premium Coffee Maker</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★<span class="partial-star">★</span></span>
+                            <span class="count">(76)</span>
+                        </div>
+                        <p class="product-price">₹11,999</p>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="btn btn-icon"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-category="clothing" data-price="6999" data-date="2023-10-28" data-rating="4.0" data-features="new">
+                    <div class="product-badge new">New</div>
+                    <img src="https://via.placeholder.com/300x300" alt="Winter Jacket">
+                    <div class="product-info">
+                        <h3>Winter Jacket</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★</span>
+                            <span class="count">(31)</span>
+                        </div>
+                        <p class="product-price">₹6,999</p>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="btn btn-icon"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-category="electronics" data-price="22999" data-date="2023-08-15" data-rating="4.6" data-features="bestseller">
+                    <div class="product-badge bestseller">Bestseller</div>
+                    <img src="https://via.placeholder.com/300x300" alt="Bluetooth Speaker">
+                    <div class="product-info">
+                        <h3>Bluetooth Speaker</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="count">(93)</span>
+                        </div>
+                        <p class="product-price">₹22,999</p>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="btn btn-icon"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-category="books" data-price="1999" data-date="2023-11-10" data-rating="4.2" data-features="new">
+                    <div class="product-badge new">New</div>
+                    <img src="https://via.placeholder.com/300x300" alt="Bestseller Novel">
+                    <div class="product-info">
+                        <h3>The Last Chapter</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★<span class="partial-star">★</span></span>
+                            <span class="count">(67)</span>
+                        </div>
+                        <p class="product-price">₹1,999</p>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="btn btn-icon"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional 6 products -->
+                <!-- Product 7 -->
+                <div class="product-card" data-category="home" data-price="14999" data-date="2023-09-12" data-rating="4.7" data-features="eco-friendly">
+                    <div class="product-badge eco">Eco</div>
+                    <img src="https://via.placeholder.com/300x300" alt="Air Purifier">
+                    <div class="product-info">
+                        <h3>Smart Air Purifier</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="count">(53)</span>
+                        </div>
+                        <p class="product-price">₹14,999</p>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="btn btn-icon"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card" data-category="clothing" data-price="4599" data-date="2023-10-05" data-rating="4.1" data-features="bestseller">
+                    <div class="product-badge bestseller">Bestseller</div>
+                    <img src="https://via.placeholder.com/300x300" alt="Cotton T-Shirt">
+                    <div class="product-info">
+                        <h3>Premium Cotton T-Shirt</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★</span>
+                            <span class="count">(87)</span>
+                        </div>
+                        <p class="product-price">₹4,599</p>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="btn btn-icon"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="product-card" data-category="electronics" data-price="34999" data-date="2023-11-01" data-rating="4.9" data-features="new">
+                    <div class="product-badge new">New</div>
+                    <img src="https://via.placeholder.com/300x300" alt="Wireless Earbuds">
+                    <div class="product-info">
+                        <h3>Pro Wireless Earbuds</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="count">(112)</span>
+                        </div>
+                        <p class="product-price">₹34,999</p>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="btn btn-icon"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="product-card" data-category="books" data-price="2799" data-date="2023-08-28" data-rating="4.4" data-features="bestseller">
+                    <div class="product-badge bestseller">Bestseller</div>
+                    <img src="https://via.placeholder.com/300x300" alt="Cookbook">
+                    <div class="product-info">
+                        <h3>Modern Cooking Guide</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★<span class="partial-star">★</span></span>
+                            <span class="count">(45)</span>
+                        </div>
+                        <p class="product-price">₹2,799</p>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="btn btn-icon"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 11 -->
+                <div class="product-card" data-category="home" data-price="9999" data-date="2023-09-30" data-rating="4.2" data-features="eco-friendly">
+                    <div class="product-badge eco">Eco</div>
+                    <img src="https://via.placeholder.com/300x300" alt="Bedding Set">
+                    <div class="product-info">
+                        <h3>Organic Cotton Bedding Set</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★<span class="partial-star">★</span></span>
+                            <span class="count">(38)</span>
+                        </div>
+                        <p class="product-price">₹9,999</p>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="btn btn-icon"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 12 -->
+                <div class="product-card" data-category="clothing" data-price="13999" data-date="2023-10-20" data-rating="4.5" data-features="new">
+                    <div class="product-badge new">New</div>
+                    <img src="https://via.placeholder.com/300x300" alt="Sneakers">
+                    <div class="product-info">
+                        <h3>Performance Sneakers</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★<span class="half-star">★</span></span>
+                            <span class="count">(72)</span>
+                        </div>
+                        <p class="product-price">₹13,999</p>
+                        <div class="product-actions">
+                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="btn btn-icon"><i class="fas fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <span>...</span>
+                <a href="#">10</a>
+                <a href="#" class="next">Next <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>ABOUT</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">TechWrist Stories</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>HELP</h3>
+                <ul>
+                    <li><a href="#">Payments</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Cancellation & Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Report Infringement</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>POLICY</h3>
+                <ul>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>SOCIAL</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Mail Us:</h3>
+                <p>TechWrist India Private Limited,<br>
+                Buildings Alyssa, Begonia &<br>
+                Clove Embassy Tech Village,<br>
+                Outer Ring Road, Devarabeesanahalli Village,<br>
+                Bengaluru, 560103,<br>
+                Karnataka, India</p>
+            </div>
+            <div class="footer-section">
+                <h3>Registered Office Address:</h3>
+                <p>TechWrist India Private Limited,<br>
+                Buildings Alyssa, Begonia &<br>
+                Clove Embassy Tech Village,<br>
+                Outer Ring Road, Devarabeesanahalli Village,<br>
+                Bengaluru, 560103,<br>
+                Karnataka, India<br>
+                CIN: U51109KA2012PTC066107<br>
+                Telephone: 1800 202 9898</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 TechWrist India. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+</body>
+</html> 
